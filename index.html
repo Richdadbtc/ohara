@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohara Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">O</div>
+                <h2>Ohara</h2>
+            </div>
+            <button class="join-btn">Join a course</button>
+            <ul class="nav-menu">
+                <li><i class="fas fa-th-large"></i> Dashboard</li>
+                <li class="active"><i class="fas fa-book"></i> All courses</li>
+                <li><i class="fas fa-folder"></i> Resources</li>
+                <li><i class="fas fa-users"></i> Friends</li>
+                <li><i class="fas fa-comment"></i> Chats</li>
+                <li><i class="fas fa-cog"></i> Settings</li>
+            </ul>
+            <div class="upgrade-section">
+                <div class="folder-icon">
+                    <i class="fas fa-folder"></i>
+                </div>
+                <p>Upgrade to <span>PRO</span> for more resources</p>
+                <button class="upgrade-btn">Upgrade</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Header -->
+            <div class="header">
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="notification">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="user-profile">
+                    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User">
+                    <span>Alexa Rogue</span>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+
+            <!-- Courses Section -->
+            <div class="courses-section">
+                <div class="courses-header">
+                    <h2>All courses</h2>
+                    <div class="tabs">
+                        <span class="active">Ongoing</span>
+                        <span>Favorite</span>
+                        <span>Complete</span>
+                    </div>
+                </div>
+
+                <div class="course-cards">
+                    <!-- UI/UX Design Card -->
+                    <div class="course-card large" style="background-color: #5b76f7;">
+                        <div class="course-info">
+                            <h3>UI/UX Design</h3>
+                            <p>20 lessons</p>
+                            <div class="duration">2h 20min</div>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72" alt="UI/UX Design">
+                        </div>
+                        <div class="instructor">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Instructor">
+                        </div>
+                    </div>
+
+                    <!-- Photography Card -->
+                    <div class="course-card" style="background-color: #26c1c9;">
+                        <div class="course-info">
+                            <h3>Photography</h3>
+                            <p>12 lessons</p>
+                            <div class="duration">1h 30min</div>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1554048612-b6a482bc67e5" alt="Photography">
+                        </div>
+                        <div class="instructor">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Instructor">
+                        </div>
+                    </div>
+
+                    <!-- Animation Card -->
+                    <div class="course-card" style="background-color: #e6a919;">
+                        <div class="course-info">
+                            <h3>Animation</h3>
+                            <p>12 lessons</p>
+                            <div class="duration">2h 30min</div>
+                        </div>
+                        <div class="play-button">
+                            <i class="fas fa-play"></i>
+                        </div>
+                        <div class="course-image">
+                            <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f" alt="Animation">
+                        </div>
+                        <div class="instructor">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Instructor">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="progress-section">
+                <h3>Progress</h3>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <i class="fas fa-pencil-alt" style="color: #5b76f7;"></i>
+                        <div class="progress-title">
+                            <h4>UI/UX Design</h4>
+                            <p>Advanced</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 75%; background-color: #5b76f7;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <i class="fas fa-camera" style="color: #26c1c9;"></i>
+                        <div class="progress-title">
+                            <h4>Photography</h4>
+                            <p>Intermediate</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%; background-color: #26c1c9;"></div>
+                    </div>
+                </div>
+                <div class="progress-item">
+                    <div class="progress-header">
+                        <i class="fas fa-film" style="color: #e6a919;"></i>
+                        <div class="progress-title">
+                            <h4>Animation</h4>
+                            <p>Advance</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 60%; background-color: #e6a919;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="upcoming-section">
+                <h3>Upcoming Task</h3>
+                <div class="task-item">
+                    <div class="task-icon" style="color: #5b76f7;">
+                        <i class="fas fa-comment-alt"></i>
+                    </div>
+                    <div class="task-info">
+                        <h4>UI/UX - Discussion</h4>
+                        <p>27 Oct 2020, Tuesday</p>
+                    </div>
+                </div>
+                <div class="task-item">
+                    <div class="task-icon" style="color: #e6a919;">
+                        <i class="fas fa-cube"></i>
+                    </div>
+                    <div class="task-info">
+                        <h4>Animation - 3D Animation</h4>
+                        <p>27 Oct 2020, Tuesday</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="download-section">
+                <h3>Download Ohara Now!</h3>
+                <div class="download-content">
+                    <div class="download-buttons">
+                        <button class="play-store"><i class="fab fa-google-play"></i></button>
+                        <button class="app-store"><i class="fab fa-apple"></i></button>
+                    </div>
+                    <div class="download-image">
+                        <img src="https://img.freepik.com/free-vector/woman-using-tablet-for-education-or-work_113065-238.jpg" alt="Download App">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
