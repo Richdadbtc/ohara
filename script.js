@@ -24,7 +24,6 @@ document.addEventListener('DOMContentLoaded', function() {
             this.classList.add('active');
             
             // Here you would typically load different content based on the selected tab
-            // For demonstration, we'll just log the selected tab
             console.log('Selected tab:', this.textContent.trim());
         });
     });
@@ -36,7 +35,6 @@ document.addEventListener('DOMContentLoaded', function() {
         card.addEventListener('mouseenter', function() {
             this.style.transform = 'translateY(-5px)';
             this.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.15)';
-            this.style.transition = 'all 0.3s ease';
         });
         
         card.addEventListener('mouseleave', function() {
@@ -96,5 +94,14 @@ document.addEventListener('DOMContentLoaded', function() {
             const store = this.classList.contains('play-store') ? 'Google Play Store' : 'Apple App Store';
             alert(`Redirecting to ${store}...`);
         });
+    });
+    
+    // Search functionality simulation
+    const searchInput = document.querySelector('.search-bar input');
+    
+    searchInput.addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            alert(`Searching for: ${this.value}`);
+        }
     });
 });
